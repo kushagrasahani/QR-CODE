@@ -1,0 +1,85 @@
+body{
+    background-color:hsl(212, 45%, 89%)
+    
+}
+section{
+   position: absolute;
+   width:310px;
+   height: 460px ;
+   margin: auto;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top:0;
+   background-color:hsl( 0, 0%, 100%);
+   box-sizing: border-box;
+   border-radius: 30px;
+
+    
+}
+img{
+    width: 275px;
+    height: 250px;
+   border-radius: 15px;
+}
+div.imgg{
+ 
+    /* height: 200px; */
+   padding-top: 10px;
+    margin: 6px;
+    
+    border-radius: 20px;
+text-align: center;
+}
+div.text{
+    height: 170px;
+    padding:7px;
+   text-align: center;
+    
+}
+p.one{
+    font-weight: 700;
+    font-family: "Outfit",sans-serif;
+    letter-spacing: 1px;
+    font-size:20px;
+}
+p.two{
+    font-weight: 300;
+    font-family: "Outfit",sans-serif;
+    color: hsl(220, 15%, 55%);
+    text-align-last: center;
+    letter-spacing: -0.25px;
+    font-size: 17px;
+}
+@media(max-width:375px){
+    section{
+        width: 330px;
+        height: 520px;
+        text-align: center;
+        display: flex;
+        flex-direction:column ;
+    }
+    div.imgg{
+        
+        flex-shrink: 0;
+    }
+   img{
+       width: 300px;
+       height: 300px;
+       flex-grow: 1;
+   }
+   div.text{
+       height: 175px;
+       padding: 8px;
+       margin: 5px;
+       flex-shrink:0 ;
+   }
+   p.one{
+       font-size: 18px;
+       font-weight: 900;
+   }
+   p.two{
+       font-size: 14.90px;
+       letter-spacing: 0.85px;
+   }
+}
